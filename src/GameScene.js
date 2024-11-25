@@ -1,3 +1,4 @@
+/*
 import Phaser from "phaser";
 
 export class GameScene extends Phaser.Scene {
@@ -35,7 +36,7 @@ export class GameScene extends Phaser.Scene {
            bomb.setCollideWorldBounds(true);
      
            bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
-         }  */
+         }  
 
 
 
@@ -103,7 +104,7 @@ export class GameScene extends Phaser.Scene {
     });
     
      
-    /*지형*/
+
     const platforms = this.physics.add.staticGroup();
 
     platforms.create(400, 568, "ground").setScale(2).refreshBody();
@@ -114,7 +115,7 @@ export class GameScene extends Phaser.Scene {
 
     platforms.create(750, 220, "ground");
 
-    /*플레이어*/
+
     //생성자 this.physics.add.sprite 로 다이나믹 객체 생성
     const player = this.physics.add.sprite(100, 450, 'dude').setName("player");
     player.setBounce(0.2); //setBounce로 충돌시 바운스효과 생성
@@ -199,4 +200,4 @@ export class GameScene extends Phaser.Scene {
 
       
   }
-}
+}*/
